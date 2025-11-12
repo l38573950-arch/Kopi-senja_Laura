@@ -1,0 +1,137 @@
+<style>
+  body {
+    background-color: #f5deb3; /* Warna beige seperti kopi susu */
+    font-family: Arial, sans-serif;
+    color: #5a3a22; /* Warna coklat tua untuk teks */
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff8e1; /* Warna krem lebih terang untuk konten */
+    border-radius: 8px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #8b4513; /* Warna coklat tua untuk nav */
+    overflow: hidden;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    background-color: #a0522d;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #d2b48c;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #d2b48c; /* Warna tan untuk header tabel */
+  }
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservasi - Kopi Senja</title>
+</head>
+<body bgcolor="#f5e7d0" style="font-family: Arial; color:#3e2f1c;">
+
+  <table border="0" width="100%" bgcolor="#f8f1e1" cellpadding="10">
+    <tr align="center">
+      <td><a href="beranda1.html" style="text-decoration:none; color:black;"><b>Beranda</b></a></td>
+      <td><a href="menu.html" style="text-decoration:none; color:black;"><b>Menu</b></a></td>
+      <td><a href="reservasi.html" style="text-decoration:none; color:black;"><b>Reservasi</b></a></td>
+    </tr>
+  </table>
+
+  <h1 align="center">Formulir Reservasi Kopi Senja</h1>
+  <p align="center">Isi formulir di bawah ini untuk melakukan reservasi meja Anda ☕</p>
+
+  <form action="#" method="post">
+    <table align="center" border="0" cellpadding="8" cellspacing="5" bgcolor="#f0d9b5">
+      <tr>
+        <td>Nama Lengkap:</td>
+        <td><input type="text" name="nama" placeholder="Nama Anda" required></td>
+      </tr>
+      <tr>
+        <td>Nomor Telepon:</td>
+        <td><input type="tel" name="telepon" placeholder="08xxxxxxxxxx" required></td>
+      </tr>
+      <tr>
+        <td>Tanggal Reservasi:</td>
+        <td><input type="date" name="tanggal" required></td>
+      </tr>
+      <tr>
+        <td>Jumlah Orang:</td>
+        <td><input type="number" name="jumlah" min="1" max="20" required></td>
+      </tr>
+      <tr>
+        <td>Pilih Area:</td>
+        <td>
+          <input type="radio" name="area" value="Indoor"> Indoor (Non-Smoking)<br>
+          <input type="radio" name="area" value="Outdoor"> Outdoor (Smoking)
+        </td>
+      </tr>
+      <tr>
+        <td>Catatan Tambahan:</td>
+        <td><textarea name="catatan" rows="4" cols="30" placeholder="Tulis permintaan khusus..."></textarea></td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <button type="submit" style="background-color:#6b4b32; color:white; padding:8px 15px; border:none; border-radius:5px;">
+            Kirim Reservasi
+          </button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <h2>Informasi Penting</h2>
+  <ul>
+    <li>Reservasi akan kami konfirmasi melalui telepon.</li>
+    <li>Mohon datang 10 menit sebelum waktu reservasi.</li>
+    <li>Reservasi lebih dari 6 orang harap hubungi kami langsung.</li>
+  </ul>
+
+  <h2>Slot Waktu Tersedia</h2>
+  <table border="1" cellpadding="8" cellspacing="0" bordercolor="#8b6f47">
+    <tr bgcolor="#d7b98c">
+      <th>Sesi</th>
+      <th>Waktu</th>
+    </tr>
+    <tr align="center">
+      <td>Pagi</td>
+      <td>09:00, 10:00, 11:00</td>
+    </tr>
+    <tr align="center">
+      <td>Siang</td>
+      <td>13:00, 14:00, 15:00</td>
+    </tr>
+    <tr align="center">
+      <td>Malam</td>
+      <td>19:00, 20:00, 21:00</td>
+    </tr>
+  </table>
+  <p align="center" style="margin-top:30px;">
+    <a href="index.html" style="text-decoration:none; color:white; background-color:#6b4b32; padding:8px 15px; border-radius:5px;">
+      ⬅ Kembali ke Beranda
+    </a>
+  </p>
+
+</body>
+</html>
+📘 Penjelasan:
